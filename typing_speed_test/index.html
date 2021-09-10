@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Typing Speed Test</title>
+  </head>
+  <body style="background-color: rgb(36, 155, 252);">
+    <div class="container-fluid mt-4 p-5 text-white">
+        <div class="card " style="background-color: rgb(26, 45, 63);">
+            <div class="card-header text-center ">
+                <h4 class=""><b>Welcome To Typing Speed Test</b></h4>
+            </div>
+            <div class="card-body">
+                <div class="container-fluid p-2 pb-3 border border-secondary" id="sampletext">
+                    Cards assume no specific width to start, so they’ll be 100% wide unless otherwise stated. You can change this as needed with custom CSS, grid classes, grid Sass mixins, or utilities.
+                </div>
+                <div class="container-fluid p-1 mt-2 border border-secondary" id="result">
+                    <div class="border border-secondary p-1">
+                        <div class="row align-items-center">
+                            <div class="col text-center">
+                               Time : <span id="time"> 00:00</span>
+                            </div>
+                            <div class="col text-center">
+                                Matched : <span id="matched"> 0</span>
+                            </div>
+                            <div class="col text-center">
+                                UnMatched : <span id="unmatched"> 0</span>
+                            </div>
+                            <div class="col text-center">
+                                NotWritten : <span id="notwritten"> 0</span>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="form-floating mt-3">
+                    <textarea class="form-control text-white" disabled id="text" style="min-height: 30vh;background-color: rgb(6, 18, 29);" placeholder="Leave a comment here" id="floatingTextarea2" ></textarea>
+                    <label for="floatingTextarea2" id="showtime">Write Here</label>
+                </div>
+            </div>
+            <div class="card-footer text-center">
+                <a class="btn btn-primary" id="startBtn">Start</a>
+                <!---<a class="btn btn-success" id="doneBtn">Done</a> --->
+            </div>
+        </div>
+    
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+    
+  </body>
+</html>
